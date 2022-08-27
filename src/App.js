@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div>
         <nav>
-          <a href="#about">About</a>
+          <a className="active" href="#about">About</a>
           <a href="#contact">Contact</a>
           <a href="#experience">Experience</a>
           <a href="#work">Work</a>
