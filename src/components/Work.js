@@ -4,7 +4,7 @@ class Work extends React.Component {
   render(){
     return (
       <div>
-        <p>Work</p>
+        <h1>Work</h1>
       </div>
     )
   }

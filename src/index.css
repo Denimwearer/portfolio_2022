@@ -12,10 +12,6 @@ code {
     monospace;
 }
 
-#about {
-  color: purple;
-  background-color: orange;
-}
 
 nav {
   overflow: hidden;
@@ -28,6 +24,7 @@ a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  display: inline-block;
 }
 
 a:hover {
@@ -38,4 +35,47 @@ a:hover {
 .active {
   background-color: black;
   color: white;
+}
+
+section {
+  margin: 0px auto;
+  padding: 100px 0px;
+  display: block;
+
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  list-style-type: square;
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+}
+
+.contact-section, .about-section {
+  max-width: 600px;
+  margin: 0px auto 100px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+a.email {
+  float:none;
+}
+
+p {
+  margin: 0px 0px 15px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
