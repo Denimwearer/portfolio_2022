@@ -17,14 +17,17 @@ class App extends Component {
           <a href="#contact">Contact</a>
         </nav>
         <div>
-          <h1>Hello, my name is</h1>
-          <h1> Cordero Dixon.</h1>
-          <h3> I assemble things for the web.</h3>
+          <section className="header-section">
+            <h1>Hello, my name is</h1>
+            <h2 className="heading"> Cordero Dixon.</h2>
+            <h3 className="heading">I assemble web applications.</h3>
+            <p className="heading-paragraph">I'm a software engineer working on both the front and back-end. Currently, I'm doing some freelance work.</p>
+          </section>
           <section id="about" className="about-section"><About /></section>
           <section id="experience"><Experience /></section>
           <section id="work"><Work /></section>
           <section id="contact" className="contact-section"><Contact /></section>
-          <h1>Created by Cordero Dixon</h1>
+            <h1>Created by Cordero Dixon</h1>
         </div>
       </div>
 
