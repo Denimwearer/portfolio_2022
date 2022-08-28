@@ -14,7 +14,7 @@ class App extends Component {
           <a href="#experience">Experience</a>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
-          <a className="resume-button">Resume</a>
+          <a className="resume-button" href="/Resume_2022.pdf">Resume</a>
         </nav>
         <div>
           <section className="header-section">
