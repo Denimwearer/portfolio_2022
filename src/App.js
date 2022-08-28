@@ -1,5 +1,4 @@
 import React, {Component } from 'react';
-import ReactDOM from 'react-dom';
 import About from './components/About';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
@@ -15,6 +14,7 @@ class App extends Component {
           <a href="#experience">Experience</a>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
+          <a className="resume-button">Resume</a>
         </nav>
         <div>
           <section className="header-section">

@@ -128,3 +128,15 @@ p {
   margin: 20px 0px 0px;
   max-width: 540px;
 }
+
+.resume-button {
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 14px 16px;
+  line-height: 1;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 17px;
+  float: right;
+}
