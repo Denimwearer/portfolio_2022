@@ -4,7 +4,7 @@ class About extends React.Component {
   render(){
     return (
       <div className="inner">
-        <div>
+        <div className="about-div">
           <h2 className="heading">About Me</h2>
           <div>
             <p>Yo! My name is Cordero and I love creating things. My interest in web development started back in summer of 2018, so I took a course at General Assembly that taught me my skills.</p>
@@ -24,6 +24,10 @@ class About extends React.Component {
             <li>Postgres</li>
             <li>SQL</li>
           </ul>
+        </div>
+        <div className="picture-div">
+          <div className="wrapper">
+          </div>
         </div>
       </div>
     )

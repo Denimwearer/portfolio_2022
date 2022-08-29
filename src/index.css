@@ -71,13 +71,20 @@ section {
 
 }
 
-.skills-list {
+.about-div ul.skills-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 200px));
   list-style-type: square;
   gap: 0px 10px;
   padding: 0px;
   margin: 20px 20px 0px;
+}
+
+.about-div ul.skills-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 13px;
 }
 
 .contact-section {
@@ -147,6 +154,10 @@ p {
 
 }
 
+/* p:last-child, p:last-of-type {
+  margin: 0px;
+} */
+
 .heading-paragraph {
   margin: 20px 0px 0px;
   max-width: 540px;
@@ -164,7 +175,7 @@ p {
   float: right;
 }
 
-.inner, .about-section {
+.about-section .inner {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 50px;
@@ -198,4 +209,19 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+}
+
+.picture-div {
+  position: relative;
+  max-width: 300px;
+}
+
+.picture-div .wrapper {
+box-shadow: 0 10px 30px -15px black;
+transition: all 0.25s cubicbezier(0.645, 0.045, 0.355, 1);
+display: block;
+position: relative;
+width: 100%;
+border-radius: 4px;
+background-color: black;
 }
