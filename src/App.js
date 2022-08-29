@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div>
         <nav>
-          <a className="w3-xlarge fa fa-home" href="/"></a>
+          <a className="w3-xlarge fa fa-home" href="/"> </a>
           <a className="active" href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#work">Work</a>
@@ -24,7 +24,7 @@ class App extends Component {
           <h3 className="big-heading">I assemble web apps.</h3>
           <p className="heading-paragraph">I'm a software engineer working on both the front and back-end. Currently, I'm doing some freelance work.</p>
         </section>
-          <section id="about" className="about-section"><About /></section>      
+          <section id="about" className="about-section"><About /></section>
           <section id="experience"><Experience /></section>
           <section id="work"><Work /></section>
           <section id="contact" className="contact-section"><Contact /></section>

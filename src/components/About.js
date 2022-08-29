@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class About extends React.Component {
   render(){
     return (
@@ -27,6 +28,13 @@ class About extends React.Component {
         </div>
         <div className="picture-div">
           <div className="wrapper">
+            <div className="image-wrapper">
+              <div className="about-image-div">
+                <img alt="profile" src="bahamas.jpeg"></img>
+              </div>
+        <div>
+        </div>
+            </div>
           </div>
         </div>
       </div>
