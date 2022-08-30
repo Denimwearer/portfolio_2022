@@ -118,7 +118,7 @@ h2 {
 
 h3 {
   margin-top: 10px;
-  line-height: 0.9;
+  line-height: 1.1;
   font-weight: 600;
   display: block;
   margin-block-start: 1em;
@@ -197,6 +197,7 @@ li {
 }
 
 ul {
+  display: block;
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -284,4 +285,51 @@ img {
   width: 100%;
   height: auto;
   padding: 10px 5px;
+}
+
+.work-unordered-list1 {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.work-listed-items1 {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.work-listed-items1:not(:last-of-type) {
+  margin-bottom: 100px;
+}
+
+.work-listed-items1:nth-last-of-type(2n+1) .project-content {
+  grid-column: 7 / -1;
+  text-align: right;
+}
+
+.work-listed-items1 .project-content {
+  position: relative;
+  grid-area: 1 / 1 / -1 / 7;
+}
+
+.work-listed-items1 .project-overline {
+  margin: 10px 0px;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .work-listed-items1 .project-title {
+    margin: 0px 0px 20px;
+  }
+}
+
+.work-listed-items1 .project-title {
+  color: black;
+  font-size: clamp(24px, 5vw 28px);
 }
