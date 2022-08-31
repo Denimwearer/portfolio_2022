@@ -19,13 +19,14 @@ nav {
 }
 
 a {
-  float: left;
+  /* float: left; */
+  display: inline-block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  display: inline-block;
   font-size: 17px;
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
 
@@ -293,6 +294,11 @@ img {
   margin: 0px;
 }
 
+.work-unordered-list1 a {
+  position: relative;
+  z-index: 1;
+}
+
 .work-listed-items1 {
   position: relative;
   display: grid;
@@ -332,4 +338,103 @@ img {
 .work-listed-items1 .project-title {
   color: black;
   font-size: clamp(24px, 5vw 28px);
+}
+
+.work-listed-items1 .project-description {
+  box-shadow: 0 10px 30px -15px black;
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: 4px;
+  /* background-color: #0000FF; */
+  color: black;
+  font-size: 18px;
+}
+
+.work-listed-items1:nth-of-type(2n+1) .technologies-used-list {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.work-listed-items1 .technologies-used-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0px;
+  list-style: none;
+}
+
+.work-listed-items1:nth-of-type(2n+1) .technologies-used-list{
+  margin: 0px 0px 5px 20px;
+}
+
+.work-listed-items1 .technologies-used-list li {
+  margin: 5px;
+  color: black;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.work-listed-items1:nth-of-type(2n+1) .project-links {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  margin-left: 0px;
+  margin-right: -10px;
+}
+
+.work-listed-items1 .project-links {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  color: black;
+}
+
+.work-listed-items1 .project-image .image {
+  border-radius: 4px;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%) contrast(1) brightness(90%);
+}
+
+.work-listed-items1:nth-of-type(2n+1) .project-image {
+  grid-column: 1 / 8;
+}
+
+.work-listed-items1 .project-image {
+  box-shadow: 0 10px 30px -15px black;
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  grid-area: 1 / 6 / -1 / -1;
+  position: relative;
+  z-index: 1;
+}
+
+.work-listed-items1 .project-image a {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.work-image-div {
+  max-width: 700px;
+  display: block;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper-constrained {
+  display: inline-block;
+}
+
+img, .image-wrapper {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
 }
