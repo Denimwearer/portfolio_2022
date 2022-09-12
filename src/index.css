@@ -15,7 +15,6 @@ code {
 
 nav {
   overflow: hidden;
-  background-color: white;
 }
 
 a {
@@ -70,6 +69,18 @@ section {
   display: block;
   max-width: 1000px;
 
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 60px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 .about-div ul.skills-list {
@@ -161,13 +172,14 @@ p {
 .resume-button {
   color: black;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px dashed black;
   padding: 14px 16px;
   line-height: 1;
   text-decoration: none;
-  margin-right: 15px;
+  /* margin-right: 15px; */
   font-size: 17px;
   float: right;
+  position: relative;
 }
 
 .about-section .inner {
@@ -322,6 +334,30 @@ img {
   grid-area: 1 / 1 / -1 / 7;
 }
 
+@media (max-width: 480px) {
+  .work-listed-items1:nth-of-type(2n+1) .project-content {
+    padding: 25px 25px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-listed-items1:nth-of-type(2n+1) .project-content {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-listed-items1 .project-content {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100;
+    z-index: 5;
+  }
+}
+
 .work-listed-items1 .project-overline {
   margin: 10px 0px;
   color: black;
@@ -457,4 +493,102 @@ footer {
   min-height: 70px;
   padding: 15px;
   text-align: center;
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+}
+
+
+.navigation-menu {
+  /* margin-left: auto; */
+}
+
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #283b8b;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  /* position: absolute; */
+  display: none;
+}
+
+.hamburger:hover {
+  background-color: #2642af;
+}
+
+.resume-div {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+  display: block;
+
+  }
+
+  .navigation-menu ul {
+    flex-direction: column;
+    position: fixed;
+    /* top: 60px; */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: white;
+    border-top: 1px solid black;
+    display: none;
+  }
+
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+
+  .navigation-menu li a {
+    padding: 1.5rem 0;
+  }
+
+  .navigation-menu.expanded ul {
+    display: block;
+    background-color: white;
+  }
+
+  .about-div ul.skills-list {
+    grid-template-columns: repeat(2, minmax(200px, 200px));
+  }
+  .resume-div {
+    right: 40%;
+    width: 20%;
+
+  }
 }

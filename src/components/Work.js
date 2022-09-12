@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 class Work extends React.Component {
 
@@ -49,8 +52,8 @@ class Work extends React.Component {
                       <li>{project.technologies[6]}</li>
                     </ul>
                     <div className="project-links">
-                      <a href={project.links[0]}><i className="fa-brands fa-github"></i></a>
-                      <a href={project.links[1]}><i className="fa-solid fa-link"></i></a>
+                      <a href={project.links[0]}><FontAwesomeIcon icon={faGithub}/></a>
+                      <a href={project.links[1]}><FontAwesomeIcon icon={faLink} /></a>
                     </div>
                   </div>
                 </div>

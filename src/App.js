@@ -1,22 +1,17 @@
-import React, {Component } from 'react';
+
 import About from './components/About';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Work from './components/Work';
+import Navbar from './components/Navbar';
+import './index.css';
 
 
-class App extends Component {
-  render(){
+
+function App() {
     return (
       <div>
-        <nav>
-          <a className="w3-xlarge fa fa-home" href="/"> </a>
-          <a className="active" href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#work">Work</a>
-          <a href="#contact">Contact</a>
-          <a className="resume-button" href="/Resume_2022.pdf">Resume</a>
-        </nav>
+        <Navbar />
         <div>
           <section className="header-section">
             <h1>Hello, my name is</h1>
@@ -38,6 +33,4 @@ class App extends Component {
 
     );
   }
-}
-
 export default App;
