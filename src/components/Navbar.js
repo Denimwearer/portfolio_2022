@@ -40,7 +40,7 @@ function Navbar() {
                 onClick={() => {
                   setIsNavExpanded(!isNavExpanded);
                 }}
-              ></a></li>
+              > </a></li>
               <li><a href="#about"
                 onClick={() => {
                   setIsNavExpanded(!isNavExpanded);
