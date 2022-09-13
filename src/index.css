@@ -594,6 +594,7 @@ footer {
 
   .picture-div {
     position: absolute;
-    top: 595px;
+    top: 650px;
+    width: 50%;
   }
 }
