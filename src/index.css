@@ -591,4 +591,9 @@ footer {
     width: 20%;
 
   }
+
+  .picture-div {
+    position: absolute;
+    top: 700px;
+  }
 }
