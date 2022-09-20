@@ -31,43 +31,43 @@ class Work extends React.Component {
           console.log(project.technologies);
           return (
             <div>
-            <ul className="work-unordered-list1">
-              <li className="work-listed-items1">
-                <div className="project-content">
-                  <div>
-                    <p className="project-overline">Project</p>
-                    <h3 className="project-title">
-                      <a href="https://quitter-app.herokuapp.com/">{project.name}</a>
-                    </h3>
-                    <div className="project-description">
-                      <p>{project.description}</p>
-                    </div>
-                    <ul className="technologies-used-list">
-                      <li>{project.technologies[0]}</li>
-                      <li>{project.technologies[1]}</li>
-                      <li>{project.technologies[2]}</li>
-                      <li>{project.technologies[3]}</li>
-                      <li>{project.technologies[4]}</li>
-                      <li>{project.technologies[5]}</li>
-                      <li>{project.technologies[6]}</li>
-                    </ul>
-                    <div className="project-links">
-                      <a href={project.links[0]}><FontAwesomeIcon icon={faGithub}/></a>
-                      <a href={project.links[1]}><FontAwesomeIcon icon={faLink} /></a>
-                    </div>
-                  </div>
-                </div>
-                <div className="project-image">
-                  <a className="project-image-link" href={project.links[1]}>
-                    <div className="image-wrapper image-wrapper-constrained image">
-                      <div className="work-image-div">
-                        <img src={project.picture} alt={project.name}></img>
+              <ul className="work-unordered-list1">
+                <li className="work-listed-items1">
+                  <div className="project-content">
+                    <div>
+                      <p className="project-overline">Project</p>
+                      <h3 className="project-title">
+                        <a href="https://quitter-app.herokuapp.com/">{project.name}</a>
+                      </h3>
+                      <div className="project-description">
+                        <p>{project.description}</p>
+                      </div>
+                      <ul className="technologies-used-list">
+                        <li key="1">{project.technologies[0]}</li>
+                        <li key="2">{project.technologies[1]}</li>
+                        <li key="3">{project.technologies[2]}</li>
+                        <li key="4">{project.technologies[3]}</li>
+                        <li key="5">{project.technologies[4]}</li>
+                        <li key="6">{project.technologies[5]}</li>
+                        <li key="7">{project.technologies[6]}</li>
+                      </ul>
+                      <div className="project-links">
+                        <a href={project.links[0]}><FontAwesomeIcon icon={faGithub}/></a>
+                        <a href={project.links[1]}><FontAwesomeIcon icon={faLink} /></a>
                       </div>
                     </div>
-                  </a>
-                </div>
-              </li>
-            </ul>
+                  </div>
+                  <div className="project-image">
+                    <a className="project-image-link" href={project.links[1]}>
+                      <div className="image-wrapper image-wrapper-constrained image">
+                        <div className="work-image-div">
+                          <img src={project.picture} alt={project.name}></img>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
           )
         })}
