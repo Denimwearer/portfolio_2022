@@ -20,9 +20,15 @@ class Work extends React.Component {
       technologies: ["Angular.js", "Express.js", "MongoDB", "JavaScript", "HTML", "CSS", "Node.js"],
       links:["https://github.com/Denimwearer/Playlistr", "https://csa-music-app.herokuapp.com/"],
       picture: "Playlistr.png"
+    },
+    { id:3,
+      name:"Calculator",
+      description: "Basic calculator with addition, subtraction, multplication and divison functionality.",
+      technologies: ["React", "JavaScript", "HTML", "CSS", "Node.js"],
+      links:["https://github.com/Denimwearer/calculator", "https://cal-culator-app-react.netlify.app/"],
+      picture: "Calculator.png"
     }
   ]
-
   render(){
     return (
       <div>
