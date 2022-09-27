@@ -27,6 +27,13 @@ class Work extends React.Component {
       technologies: ["React", "JavaScript", "HTML", "CSS"],
       links:["https://github.com/Denimwearer/calculator", "https://cal-culator-app-react.netlify.app/"],
       picture: "Calculator.png"
+    },
+    { id:4,
+      name:"Clock",
+      description: "Analog clock",
+      technologies: ["React", "JavaScript", "HTML", "CSS"],
+      links:["https://github.com/Denimwearer/clock", "https://cordero-clock-react-app.netlify.app/"],
+      picture: "Clock.png"
     }
   ]
   render(){
