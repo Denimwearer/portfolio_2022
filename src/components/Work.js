@@ -41,7 +41,6 @@ class Work extends React.Component {
       <div>
         <h2 className="heading">Work</h2>
         {this.projects.map(project => {
-          console.log(project.technologies);
           return (
             <div>
               <ul className="work-unordered-list1">
@@ -50,7 +49,7 @@ class Work extends React.Component {
                     <div>
                       <p className="project-overline">Project</p>
                       <h3 className="project-title">
-                        <a href="https://quitter-app.herokuapp.com/">{project.name}</a>
+                        <a href={project.links[1]}>{project.name}</a>
                       </h3>
                       <div className="project-description">
                         <p>{project.description}</p>
