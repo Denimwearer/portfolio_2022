@@ -17,7 +17,7 @@ function App() {
             <h1>Hello, my name is</h1>
             <h2 className="big-heading"> Cordero Dixon.</h2>
             <h3 className="big-heading">I assemble web apps.</h3>
-            <p className="heading-paragraph">I'm a software engineer working on full stack web applications. Currently, I'm doing some freelance work.</p>
+            <p className="heading-paragraph">I'm a software engineer working on both the front and back-end. Currently, I'm doing some freelance work.</p>
           </section>
             <section id="about" className="about-section"><About /></section>
             <section id="experience"><Experience /></section>
