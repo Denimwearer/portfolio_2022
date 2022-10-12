@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -499,7 +500,7 @@ footer {
   position: relative;
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 70px;
   width: 100%;
   padding: 0.5rem 0rem;
   background-color: #fff;
@@ -535,7 +536,7 @@ footer {
   width: 40px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #283b8b;
+  background-color: black;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   /* position: absolute; */
@@ -543,7 +544,7 @@ footer {
 }
 
 .hamburger:hover {
-  background-color: #2642af;
+  background-color: black;
 }
 
 .resume-div {
