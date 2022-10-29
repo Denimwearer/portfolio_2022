@@ -170,10 +170,14 @@ p {
   max-width: 540px;
 }
 
+@keyframes blink {
+  50% {border-color: #ff0000; }
+}
+
 .resume-button {
   color: black;
   background-color: transparent;
-  border: 1px dashed black;
+  border: 2px solid;
   padding: 14px 16px;
   line-height: 1;
   text-decoration: none;
@@ -181,6 +185,7 @@ p {
   font-size: 17px;
   float: right;
   position: relative;
+  animation: blink .5s step-end infinite alternate;
 }
 
 .about-section .inner {
