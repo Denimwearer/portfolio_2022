@@ -8,7 +8,7 @@ class About extends React.Component {
         <div className="about-div">
           <h2 className="heading">About Me</h2>
           <div>
-            <p>Yo! My name is Cordero and I love creating things. My interest in web development started back in summer of 2018, so I took a course at General Assembly that taught me my skills.</p>
+            <p>Yo! My name is Cordero. My interest in web development started back in summer of 2018, so I took a course at General Assembly that taught me my skills.</p>
             <p>Technologies I work with:</p>
           </div>
           <ul className="skills-list">

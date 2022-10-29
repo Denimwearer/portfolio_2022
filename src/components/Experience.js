@@ -10,7 +10,7 @@ class Experience extends React.Component {
             <div className="experience-div2">
               <div className="experience-div3">
               </div>
-              <p className="experience-paragraph">While I have not had any direct experience with an organization, I am a fast learner, and I am confident that I could build web applications successfully and exceed your expectations. I also have been doing some freelance work and coding challenges to keep my skills sharp.</p>
+              <p className="experience-paragraph">I am a fast learner and I am confident that I can build web applications successfully and exceed your expectations. I also have been doing some freelance work and coding challenges to keep my skills sharp.</p>
             </div>
           </div>
         </div>
