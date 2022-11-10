@@ -144,7 +144,20 @@ h3 {
 .big-heading{
   margin: 0px;
   font-size: clamp(40px, 8vw, 80px);
+  /* animation: 2s linear infinite blinky; */
 }
+/*
+@keyframes blinky {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+} */
 
 
 
