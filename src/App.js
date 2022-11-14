@@ -4,7 +4,6 @@ import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Work from './components/Work';
 import Navbar from './components/Navbar';
-import './index.css';
 
 
 
