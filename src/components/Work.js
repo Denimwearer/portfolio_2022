@@ -23,14 +23,14 @@ class Work extends React.Component {
     },
     { id:3,
       name:"Calculator",
-      description: "Basic calculator with addition, subtraction, multplication, and division functionality.",
+      description: "Calculate basic functions such as addition, subtraction, multiplication,and division.",
       technologies: ["React", "JavaScript", "HTML", "CSS"],
       links:["https://github.com/Denimwearer/calculator", "https://cal-culator-app-react.netlify.app/"],
       picture: "Calculator.png"
     },
     { id:4,
       name:"Clock",
-      description: "Analog clock",
+      description: "Analog clock.",
       technologies: ["React", "JavaScript", "HTML", "CSS"],
       links:["https://github.com/Denimwearer/clock", "https://cordero-clock-react-app.netlify.app/"],
       picture: "Clock.png"
